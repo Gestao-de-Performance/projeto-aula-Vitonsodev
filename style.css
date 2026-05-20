@@ -15,10 +15,17 @@ header, section, footer{
 }
 
 a {
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    width: 110px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     transition: transform 1s ease;
     font-size: 18px;
+    border-radius: 10px;
 }
 
 p {
@@ -29,7 +36,7 @@ p {
 
 .logo {
     margin: 2px 10px;
-    width: 160px;
+    width: 200px;
     cursor: pointer;
     margin-right: auto;
     transition: transform 1s ease;
@@ -43,8 +50,7 @@ p {
 .menu {
     position: fixed;
     top: 0;
-    background: #ffffff;
-    background: linear-gradient(60deg, rgba(255, 255, 255, 1) 0%, rgba(173, 184, 199, 1) 98%, rgba(194, 200, 209, 1) 100%);
+    background: rgb(24, 24, 26);
     left: 0;
     right: 0;
     font-family: Poppins, sans-serif;
@@ -60,29 +66,29 @@ p {
 a:hover {
     transform: scale(1.1);
     transition: transform 1.0s ease;
-    text-shadow: #000000 0px 0px 5px;
     transition: text-shadow 1s ease;
-   
+    background-color:rgba(128, 128, 128, 0.219);
 }
     
 
 .button-contact {                       
-    background-color: #0b569c;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
+    border: 2px solid #0b569c;
     text-decoration: none;
     margin-right: 1%;
     transition: transform 1s ease;
 }
-
+/* Efeito hover do botão contato, para ficar preenchido com a mesma cor da borda ao passar o mouse*/
 .button-contact:hover {
     transform: scale(1.2);
     transition: transform 1.0s ease;
+    background-color: #0b569c;
 }
 
 .apresentation {
-    margin: 10vh 0;
+    margin: 15vh 0;
     display: flex;
 }
 
@@ -99,37 +105,102 @@ a:hover {
     font-family: Poppins, sans-serif;
     font-size: 32px;
 }
+
+.caixaDesenvolvedorFrontend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 720px;
+    
+}
 #cargo {
     color: #000000;
     font-family: Poppins, sans-serif;
     font-size: 100px;
+    align-self: flex-start;
+
 }
 
 #cargo1 {
     color: #000000;
     font-family: Poppins, sans-serif;
     font-size: 100px;
-    margin-left: 39%;
     margin-bottom: 1vh;
+    align-self: flex-end;
 }
-    
+
 .fotoperfil {
     width: 300px;
     display: flex;
 }
 
-.textoApresentacao {   
-    margin-top: 3vh; 
+.textoApresentacao {
+    margin-top: 10vh; 
     display: flex;
     flex-direction: column;
-    font-family:poppins, sans-serif;
+    font-family:poppins, sans-serif;    
     letter-spacing: 3%;
 }   
 
-.habilidades {
+.tituloSkills {
     display: flex;
-    gap: 2.0rem;
-    width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+}
+
+.caixaSkills {
+    display: flex;
+    justify-content: center;
+    justify-items: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin: 0 10vw;
     border-radius: 10px;
 }
+
+/* Efeito de hover para mostrar texto em cima da imagem dentro da caixa */
+.htmlLogo, .cssLogo, .jsLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    width: 300px;
+    height: 290px;
+    box-shadow: 0 10px 15px #505050;
+    transition: transform 1.4s ease, background-color 0.4s ease, box-shadow 1.0s ease;
+
+}
+
+.htmlLogo span, .cssLogo span, .jsLogo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.htmlLogo:hover span, .cssLogo:hover span , .jsLogo:hover span {
+    opacity: 1;
+}
+ /* Efeito de hover para mostrar texto em cima da imagem dentro da caixa */
+
+ /* Efeito de hover para aumentar escala da habilidade e escurecer um pouco a sombra dda caixa*/
+.htmlLogo:hover , .cssLogo:hover , .jsLogo:hover{
+    background-color: #eeeeee;
+    transform: scale(1.03);
+    box-shadow: 0 12px 15px #424242;
+}
+/* Efeito de hover para aumentar escala da habilidade e escurecer um pouco a sombra dda caixa*/
+
+
+
