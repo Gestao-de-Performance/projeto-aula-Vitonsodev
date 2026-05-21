@@ -147,9 +147,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-top: 10vh;
+    margin-bottom: 4vh;
     color: #000000;
     font-family: Poppins, sans-serif;
     font-size: 40px;
+
 }
 
 .caixaSkills {
@@ -174,7 +176,7 @@ a:hover {
     border-radius: 10px;
     width: 300px;
     height: 290px;
-    box-shadow: 0 10px 15px #505050;
+    box-shadow: 0 10px 15px #131212;
     transition: transform 1.4s ease, background-color 0.4s ease, box-shadow 1.0s ease;
 
 }
@@ -198,9 +200,90 @@ a:hover {
 .htmlLogo:hover , .cssLogo:hover , .jsLogo:hover{
     background-color: #eeeeee;
     transform: scale(1.03);
-    box-shadow: 0 12px 15px #424242;
 }
 /* Efeito de hover para aumentar escala da habilidade e escurecer um pouco a sombra dda caixa*/
+
+.estrelas {
+    display: flex;
+    opacity: 0;
+}
+.htmlLogo:hover > .estrelas , .cssLogo:hover > .estrelas , .jsLogo:hover > .estrelas {
+    opacity: 1;
+    transition: transform 1.5s ease;
+}
+
+.tamanhoEstrelas {
+    width: 30px;
+}
+
+.tituloProjetos {
+    display: flex ;
+    justify-content: center;
+    color: #fff;
+    margin-top: 15vw;
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    
+}
+
+
+.meusProjetos {
+    position: relative;
+    font-size: 24px;
+    background: #0b569c;
+    border-radius: 10px 10px 0 0;
+    margin-top: -350px;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    height: 900px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-top:400px;
+    padding-bottom: 100px;
+}
+
+.landingPageMario , .landingPageTheLast {
+    background-color: #1a1a1d;
+    width: 350px;
+    justify-items: center;
+    border: 4px solid #353333;
+    border-radius: 8px;
+
+}
+ .textoLand > p {
+    padding: 10px;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.imagemLand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #353333;
+    width: 344px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121214;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    height: 200px;
+}
+
+.contatosRodape {
+    display: flex;
+    gap: 10px;
+}
+
+
+
 
 
 
