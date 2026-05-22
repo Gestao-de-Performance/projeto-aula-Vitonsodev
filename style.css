@@ -164,6 +164,12 @@ a:hover {
     border-radius: 10px;
 }
 
+/* Garantir que as skills fiquem acima dos projetos utilziando o z-index positivo 2 */
+.caixaSkills {
+    position: relative;
+    z-index: 2;
+}
+
 /* Efeito de hover para mostrar texto em cima da imagem dentro da caixa */
 .htmlLogo, .cssLogo, .jsLogo {
     display: flex;
@@ -226,7 +232,6 @@ a:hover {
     
 }
 
-
 .meusProjetos {
     position: relative;
     font-size: 24px;
@@ -236,7 +241,7 @@ a:hover {
     margin-left: -10vw;
     margin-right: -10vw;
     height: 900px;
-    z-index: -1;
+    z-index: 0;
     display: flex;
     justify-content: center;
     gap: 1vw;
@@ -250,12 +255,62 @@ a:hover {
     justify-items: center;
     border: 4px solid #353333;
     border-radius: 8px;
-
 }
+
+.landingPageMario, .landingPageTheLast {
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+/* Hover para ambos os cards de projeto */
+.landingPageMario:hover, .landingPageTheLast:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+
  .textoLand > p {
     padding: 10px;
     color: white;
     font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thelast1 {
+    font-size: 23px;
+}
+
+.textoLand > h4 {
+    padding: 10px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.textoPequenoLand {
+    font-size: medium;
+    
+}
+
+
+.devLinks > h4 {
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devLinks > p {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .imagemLand {
@@ -265,6 +320,14 @@ a:hover {
     border-radius: 4px 4px 0 0;
     border: 1px solid #353333;
     width: 344px;
+    height: 195px;
+}
+
+.linkProjeto1 {
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 6%;
+    font-size: 22px;
 }
 
 .rodape {
@@ -281,8 +344,6 @@ a:hover {
     display: flex;
     gap: 10px;
 }
-
-
 
 
 
