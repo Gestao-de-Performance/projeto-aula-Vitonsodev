@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#ffffff;
+    margin: 0 10vw;
+    padding-top: 10vh;
+}
+
+header, section, footer{
+    margin: 0vw 0;
+}
+
+a {
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    width: 110px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 1s ease;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+p {
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+}
+
+.logo {
+    margin: 2px 10px;
+    width: 200px;
+    cursor: pointer;
+    margin-right: auto;
+    transition: transform 1s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 1.0s ease;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    background: rgb(24, 24, 26);
+    left: 0;
+    right: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    gap: 2.0rem;
+    padding: 1rem 10vw;
+    z-index: 100;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: transform 1.0s ease;
+    transition: text-shadow 1s ease;
+    background-color:rgba(128, 128, 128, 0.219);
+}
+    
+
+.button-contact {                       
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #0b569c;
+    text-decoration: none;
+    margin-right: 1%;
+    transition: transform 1s ease;
+}
+/* Efeito hover do botão contato, para ficar preenchido com a mesma cor da borda ao passar o mouse*/
+.button-contact:hover {
+    transform: scale(1.2);
+    transition: transform 1.0s ease;
+    background-color: #0b569c;
+}
+
+.apresentation {
+    margin: 15vh 0;
+    display: flex;
+}
+
+#ola1 {
+    margin-top: 2vh;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+}
+
+#nome1 {
+    margin-top: 1vh;
+    color: #0b569c;
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+}
+
+.caixaDesenvolvedorFrontend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 720px;
+    
+}
+#cargo {
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 100px;
+    align-self: flex-start;
+
+}
+
+#cargo1 {
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 100px;
+    margin-bottom: 1vh;
+    align-self: flex-end;
+}
+
+.fotoperfil {
+    width: 300px;
+    display: flex;
+}
+
+.textoApresentacao {
+    margin-top: 10vh; 
+    display: flex;
+    flex-direction: column;
+    font-family:poppins, sans-serif;    
+    letter-spacing: 3%;
+}   
+
+.tituloSkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+
+}
+
+.caixaSkills {
+    display: flex;
+    justify-content: center;
+    justify-items: space-between;
+    align-items: center;
+    gap: 5rem;
+    margin: 0 10vw;
+    border-radius: 10px;
+}
+
+/* Garantir que as skills fiquem acima dos projetos utilziando o z-index positivo 2 */
+.caixaSkills {
+    position: relative;
+    z-index: 2;
+}
+
+/* Efeito de hover para mostrar texto em cima da imagem dentro da caixa */
+.htmlLogo, .cssLogo, .jsLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    width: 300px;
+    height: 290px;
+    box-shadow: 0 10px 15px #131212;
+    transition: transform 1.4s ease, background-color 0.4s ease, box-shadow 1.0s ease;
+
+}
+
+.htmlLogo span, .cssLogo span, .jsLogo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.htmlLogo:hover span, .cssLogo:hover span , .jsLogo:hover span {
+    opacity: 1;
+}
+ /* Efeito de hover para mostrar texto em cima da imagem dentro da caixa */
+
+ /* Efeito de hover para aumentar escala da habilidade e escurecer um pouco a sombra dda caixa*/
+.htmlLogo:hover , .cssLogo:hover , .jsLogo:hover{
+    background-color: #eeeeee;
+    transform: scale(1.03);
+}
+/* Efeito de hover para aumentar escala da habilidade e escurecer um pouco a sombra dda caixa*/
+
+.estrelas {
+    display: flex;
+    opacity: 0;
+}
+.htmlLogo:hover > .estrelas , .cssLogo:hover > .estrelas , .jsLogo:hover > .estrelas {
+    opacity: 1;
+    transition: transform 1.5s ease;
+}
+
+.tamanhoEstrelas {
+    width: 30px;
+}
+
+.tituloProjetos {
+    display: flex ;
+    justify-content: center;
+    color: #fff;
+    margin-top: 15vw;
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    
+}
+
+.meusProjetos {
+    position: relative;
+    font-size: 24px;
+    background: #0b569c;
+    border-radius: 10px 10px 0 0;
+    margin-top: -350px;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    height: 900px;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-top:400px;
+    padding-bottom: 100px;
+}
+
+.landingPageMario , .landingPageTheLast {
+    background-color: #1a1a1d;
+    width: 350px;
+    justify-items: center;
+    border: 4px solid #353333;
+    border-radius: 8px;
+}
+
+.landingPageMario, .landingPageTheLast {
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+/* Hover para ambos os cards de projeto */
+.landingPageMario:hover, .landingPageTheLast:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+
+ .textoLand > p {
+    padding: 10px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thelast1 {
+    font-size: 23px;
+}
+
+.textoLand > h4 {
+    padding: 10px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.textoPequenoLand {
+    font-size: medium;
+    
+}
+
+
+.devLinks > h4 {
+    padding: 10px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.devLinks > p {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.imagemLand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #353333;
+    width: 344px;
+    height: 195px;
+}
+
+.linkProjeto1 {
+    width: 300px;
+    margin-top: 5px;
+    margin-left: 6%;
+    font-size: 22px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121214;
+    margin-left: -10vw;
+    margin-right: -10vw;
+    height: 200px;
+}
+
+.contatosRodape {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
